@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+    <script>
+        function doRegister() {
+            // 获取元素
+            var element = document.getElementById("username");
+            var value = element.value;
+            alert("value:" + value);
+        }
+    </script>
+</head>
+<body>
+<h3>注册</h3>
+
+<!--action代表谁来处理请求.-->
+<!--method 代表提交方式.默认是get-->
+<form action="登录成功界面.html" method="get">
+    用户名: <input type="text" placeholder="请输入用户名" name="username" id="username" value="123"> <br>
+    密　码: <input type="password" placeholder="请输入密码" name="userpwd" id="userpwd"> <br>
+    <input type="submit" value="登录">
+    <input type="button" onclick="doRegister()" value="注册">
+    <input type="date" value="忘记密码">
+</form>
+
+</body>
+</html>
